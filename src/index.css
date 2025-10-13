@@ -10,4 +10,9 @@ body {
   --color-brownish: #762c2c;
   --color-greenish: #afc9bf;
   --color-depression: #b2acac;
+  --color-yellowish: #f5e2cf;
+  --color-anotheryellow: #faf1e7;
+  --color-verylightgray: #d9d9d9;
+  --color-verylightgreen: #d9e0de;
+  --font-instrument: "Instrument Sans", sans-serif;
 }

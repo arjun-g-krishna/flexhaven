@@ -33,7 +33,7 @@ export default function About() {
         </div>
         <div className="flex justify-center md:justify-start">
           <button
-            className="bg-greenish rounded-md text-white text-xl md:text-2xl font-semibold hover:bg-amber-600 transition px-6 py-4 md:px-8 md:py-6"
+            className="bg-greenish rounded-md text-white text-2xl md:text-3xl font-semibold hover:bg-amber-600 transition px-6 py-4 md:px-8 md:py-6"
             onClick={handleScroll}
           >
             Get started

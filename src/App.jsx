@@ -12,7 +12,18 @@ function App() {
     <>
       <Navbar />
       <main className="scroll-smooth">
-        <About />
+        <div className="relative">
+          <About />
+          <div className="flex flex-row justify-center items-center absolute w-full -bottom-8 z-10">
+            <div className="text-5xl md:text-4xl font-semibold font-instrument">
+              How
+            </div>
+            <div className="text-5xl md:text-4xl font-semibold text-white bg-verylightgray mx-2 px-2 py-2 rounded font-instrument w-xs">
+              {" "}
+              it works
+            </div>
+          </div>
+        </div>
         <Process />
         <Pricing />
         <ChooseUs />
