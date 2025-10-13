@@ -43,7 +43,7 @@ export default function Pricing() {
             price="₹0 / Free"
             features={[
               "Downloadable sample board ",
-              "Mini shopping list(3 products)",
+              "Mini shopping list (3 products)",
               "Starter color palette ",
             ]}
             buttonText="Choose Basic"
