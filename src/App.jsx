@@ -15,11 +15,10 @@ function App() {
         <div className="relative">
           <About />
           <div className="flex flex-row justify-center items-center absolute w-full -bottom-8 z-10">
-            <div className="text-5xl md:text-4xl font-semibold font-instrument">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold font-instrument">
               How
             </div>
-            <div className="text-5xl md:text-4xl font-semibold text-white bg-verylightgray mx-2 px-2 py-2 rounded font-instrument w-xs">
-              {" "}
+            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white bg-verylightgray mx-1 sm:mx-2 px-2 sm:px-3 py-1 sm:py-2 rounded font-instrument w-auto min-w-[120px] sm:min-w-0">
               it works
             </div>
           </div>
