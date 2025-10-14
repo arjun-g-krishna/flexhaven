@@ -18,13 +18,23 @@ function App() {
             <div className="text-3xl sm:text-4xl md:text-5xl font-semibold font-instrument">
               How
             </div>
-            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white bg-verylightgray mx-1 sm:mx-2 px-2 sm:px-3 py-1 sm:py-2 rounded font-instrument w-auto min-w-[120px] sm:min-w-0">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white bg-verylightgray/50 mx-1 sm:mx-2 px-2 sm:px-3 py-1 sm:py-2 rounded font-instrument w-auto min-w-[120px] sm:min-w-0">
               it works
             </div>
           </div>
         </div>
         <Process />
-        <Pricing />
+        <div className="relative">
+          <Pricing />
+          <div className="flex flex-row justify-start items-center absolute w-full -bottom-8 z-10 pl-20">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold font-instrument">
+              Why
+            </div>
+            <div className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white bg-verylightgray/50 mx-1 sm:mx-2 px-2 sm:px-3 py-1 sm:py-2 rounded font-instrument w-auto min-w-[120px] sm:min-w-0">
+              choose us
+            </div>
+          </div>
+        </div>
         <ChooseUs />
         <Customisation />
         <Waitlist />

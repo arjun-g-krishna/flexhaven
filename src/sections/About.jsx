@@ -2,7 +2,7 @@ import homepage from "../assets/homepage.jpg";
 
 export default function About() {
   const handleScroll = () => {
-    const section = document.getElementById("customisation");
+    const section = document.getElementById("pricing");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }

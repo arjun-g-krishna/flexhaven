@@ -11,7 +11,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-[#f5f5f5] z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         <h1 className="text-2xl font-bold">Flexhaven</h1>
         <ul className="hidden md:flex gap-6">
