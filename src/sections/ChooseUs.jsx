@@ -22,12 +22,15 @@ const ChooseUsCard = ({ image, heading, text }) => {
 
 export default function ChooseUs() {
   return (
-    <section className="min-h-screen bg-anotheryellow px-10 py-10 ">
+    <section
+      id="choose-us"
+      className="min-h-screen bg-anotheryellow px-10 py-10 "
+    >
       <h1 className="text-orangeish text-2xl mb-1 pl-10 mt-5">
         Think of it as interior design — simplified, digital, and tailored to
         your budget.
       </h1>
-      <div id="choose-us" className="flex flex-row items-center justify-center">
+      <div className="flex flex-row items-center justify-center">
         <div className="parent">
           <ChooseUsCard
             className="div1"

@@ -29,14 +29,11 @@ const PricingCard = ({ title, price, features, buttonText, buttonLink }) => (
 
 export default function Pricing() {
   return (
-    <div className="min-h-screen bg-[#f5f5f5] pb-20 ">
+    <div id="pricing" className="min-h-screen bg-[#f5f5f5] pb-20 ">
       <h1 className="text-orangeish text-5xl font-extrabold font-instrument text-center pt-20 mt-0 mb-20">
         Design Packages
       </h1>
-      <section
-        id="pricing"
-        className="flex flex-col items-center justify-center px-6"
-      >
+      <section className="flex flex-col items-center justify-center px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
           <PricingCard
             title="Style starter"
