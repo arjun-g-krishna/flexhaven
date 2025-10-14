@@ -43,7 +43,7 @@ export default function Waitlist() {
     >
       <div className="absolute inset-0 bg-white opacity-80"></div>
       <div className="relative z-10 flex flex-col items-center">
-        <h1 className="text-5xl font-bold font-instrument mb-6">
+        <h1 className="text-5xl font-bold font-instrument mb-6 text-center">
           Be the First to Know
         </h1>
         <h2 className="text-4xl font-bold mb-10 text-[#343030]">
