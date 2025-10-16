@@ -33,7 +33,7 @@ export default function Waitlist() {
   return (
     <section
       id="waitlist"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 relative"
+      className="section-base flex flex-col items-center justify-center px-6 py-20 relative"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
@@ -42,7 +42,7 @@ export default function Waitlist() {
       }}
     >
       <div className="absolute inset-0 bg-white opacity-80"></div>
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center animate-appear animate-on-scroll">
         <h1 className="text-5xl font-bold font-instrument mb-6 text-center">
           Be the First to Know
         </h1>

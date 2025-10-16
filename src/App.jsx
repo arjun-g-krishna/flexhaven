@@ -14,7 +14,13 @@ function App() {
       <main className="scroll-smooth">
         <div className="relative">
           <About />
-          <div className="flex flex-row justify-center items-center absolute w-full -bottom-8 z-10">
+          <div
+            style={{
+              animationTimeline: "view()",
+              animationRange: "entry 0 cover 40%",
+            }}
+            className="flex flex-row justify-center items-center absolute w-full -bottom-8 z-10 animate-appearleft"
+          >
             <div className="text-3xl sm:text-4xl md:text-5xl font-semibold font-instrument">
               How
             </div>
@@ -26,7 +32,13 @@ function App() {
         <Process />
         <div className="relative">
           <Pricing />
-          <div className="flex flex-row justify-start items-center absolute w-full -bottom-8 z-10 pl-20">
+          <div
+            style={{
+              animationTimeline: "view()",
+              animationRange: "entry 0 cover 40%",
+            }}
+            className="flex flex-row justify-start items-center absolute w-full -bottom-8 z-10 pl-20 animate-appearleft"
+          >
             <div className="text-3xl sm:text-4xl md:text-5xl font-semibold font-instrument">
               Why
             </div>

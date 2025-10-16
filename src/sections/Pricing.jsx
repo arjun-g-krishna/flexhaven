@@ -1,27 +1,20 @@
 import tick from "../assets/tick.svg";
 
 const PricingCard = ({ title, price, features, buttonText, buttonLink }) => (
-  <div className="flex flex-col h-[22rem] md:h-[26rem]">
-    <div className="bg-[#f8f8f8] px-3 py-2 mb-2">
-      <h3 className="font-instrument text-2xl font-semibold mb-1 text-greenish">
-        {title}
-      </h3>
-      <h3 className="font-instrument text-2xl font-semibold text-orangeish">
-        {price}
-      </h3>
+  <div className="card-base pricing-card animate-appear animate-on-scroll">
+    <div className="card-header">
+      <h3 className="card-title">{title}</h3>
+      <h3 className="card-price">{price}</h3>
     </div>
-    <ul className="mb-6 space-y-3">
+    <ul className="card-feature-list space-y-3">
       {features.map((feature, index) => (
-        <li key={index} className="text-lg flex items-start gap-3">
-          <img src={tick} alt="tick" className="w-5 h-5 mt-1" />
+        <li key={index} className="card-feature-item">
+          <img src={tick} alt="tick" className="card-feature-icon" />
           <span>{feature}</span>
         </li>
       ))}
     </ul>
-    <a
-      href={buttonLink}
-      className="mt-auto font-instrument bg-greenish text-white px-6 py-3 rounded-md hover:bg-amber-600 transition text-lg font-semibold"
-    >
+    <a href={buttonLink} className="btn-primary btn-primary-lg card-button">
       {buttonText}
     </a>
   </div>
@@ -29,12 +22,13 @@ const PricingCard = ({ title, price, features, buttonText, buttonLink }) => (
 
 export default function Pricing() {
   return (
-    <div id="pricing" className="min-h-screen bg-[#f5f5f5] pb-20 ">
-      <h1 className="text-orangeish text-5xl font-extrabold font-instrument text-center pt-20 mt-0 mb-20">
-        Design Packages
-      </h1>
-      <section className="flex flex-col items-center justify-center px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl w-full">
+    <div
+      id="pricing"
+      className="section-base section-light-bg pb-20 animate-appeartransparency"
+    >
+      <h1 className="section-title">Design Packages</h1>
+      <section className="center-content">
+        <div className="content-grid">
           <PricingCard
             title="Style starter"
             price="₹0 / Free"
