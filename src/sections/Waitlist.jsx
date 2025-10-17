@@ -33,7 +33,7 @@ export default function Waitlist() {
   return (
     <section
       id="waitlist"
-      className="section-base flex flex-col items-center justify-center px-6 py-20 relative"
+      className="section-base flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20 relative"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
@@ -42,17 +42,17 @@ export default function Waitlist() {
       }}
     >
       <div className="absolute inset-0 bg-white opacity-80"></div>
-      <div className="relative z-10 flex flex-col items-center animate-appear animate-on-scroll">
-        <h1 className="text-5xl font-bold font-instrument mb-6 text-center">
+      <div className="relative z-10 flex flex-col items-center animate-appear animate-on-scroll max-w-2xl w-full">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-instrument mb-4 sm:mb-6 text-center leading-tight">
           Be the First to Know
         </h1>
-        <h2 className="text-4xl font-bold mb-10 text-[#343030]">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 md:mb-10 text-[#343030] text-center">
           Join the Waitlist
         </h2>
         <form
           id="waitlist-form"
           onSubmit={handleSubmit}
-          className="flex flex-row gap-4 w-full max-w-md"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md sm:max-w-lg"
         >
           <input
             id="email"
@@ -61,17 +61,20 @@ export default function Waitlist() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="border-0 bg-white rounded-lg px-4 py-2 flex-1"
+            className="border-0 bg-white rounded-lg px-4 py-3 sm:py-2 flex-1 text-base sm:text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-orangeish"
           />
           <button
             type="submit"
             disabled={submitting}
-            className="bg-[#EEB2A9] text-white px-6 py-4 rounded-lg hover:bg-[#AFC9BF] transition disabled:opacity-60 disabled:cursor-not-allowed"
+            className="bg-[#EEB2A9] text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg hover:bg-[#AFC9BF] transition disabled:opacity-60 disabled:cursor-not-allowed text-sm sm:text-base font-medium whitespace-nowrap"
           >
             {submitting ? "Submitting..." : "Join Waitlist"}
           </button>
         </form>
-        <p id="response" className="mt-3 text-sm text-gray-700">
+        <p
+          id="response"
+          className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-700 text-center"
+        >
           {responseMsg}
         </p>
       </div>

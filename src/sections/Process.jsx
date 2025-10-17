@@ -1,16 +1,16 @@
 const ProcessCard = ({ number, title, content }) => {
   return (
-    <div className="process-card relative bg-verylightgreen rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out p-4 sm:p-6 md:p-8 w-full max-w-[16rem] sm:max-w-[20rem] min-h-[12rem] sm:min-h-[16rem] flex flex-col items-center justify-center text-center animate-appear">
-      <div className="absolute -top-8 md:-top-10 w-12 h-12 md:w-[5rem] md:h-[5rem] bg-orangeish rounded-full flex items-center justify-center shadow-md">
-        <span className="text-white font-bold text-xl sm:text-2xl md:text-3xl">
+    <div className="process-card relative bg-verylightgreen rounded-lg shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 ease-in-out p-4 sm:p-6 md:p-8 w-full max-w-[14rem] sm:max-w-[16rem] md:max-w-[18rem] lg:max-w-[20rem] min-h-[10rem] sm:min-h-[12rem] md:min-h-[14rem] lg:min-h-[16rem] flex flex-col items-center justify-center text-center animate-appear mx-auto">
+      <div className="absolute -top-6 sm:-top-8 md:-top-10 w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-orangeish rounded-full flex items-center justify-center shadow-md">
+        <span className="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
           {number}
         </span>
       </div>
-      <div className="mt-8 sm:mt-10 md:mt-12">
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3">
+      <div className="mt-6 sm:mt-8 md:mt-10 lg:mt-12">
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-white mb-2 sm:mb-3">
           {title}
         </h3>
-        <p className="text-base sm:text-lg md:text-xl text-white leading-relaxed">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white leading-relaxed">
           {content}
         </p>
       </div>
@@ -40,7 +40,7 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="section-base section-yellow-bg flex flex-col items-center justify-center px-4 py-12 sm:py-16 md:py-20"
+      className="section-base section-yellow-bg flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-20"
     >
       <div className="container mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 sm:gap-8 md:gap-12 w-full">
