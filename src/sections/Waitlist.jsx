@@ -14,7 +14,7 @@ export default function Waitlist() {
       const formData = new FormData();
       formData.append("email", email);
       await fetch(
-        "https://script.google.com/macros/s/AKfycbx1iyLpImGX_tCCbmHFXuh1S83XA-ZxYz_J-8eE0X5RDro-sBxdyjyvG91LJp_HRDj5/exec",
+        "https://script.google.com/macros/s/AKfycbzSHiTukiszTWsUXfqaRhb_mfPa4KjmKwLfwiBHH3p3eH3GDcDRPXsjPV0ddGA3-iM/exec",
         {
           method: "POST",
           body: formData,
