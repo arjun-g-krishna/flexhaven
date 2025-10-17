@@ -88,8 +88,9 @@ body {
 }
 
 .process-card {
+  margin-top: 5rem;
   animation-timeline: view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 20%;
 }
 
 /* Common Button Styles */
